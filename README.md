@@ -1,5 +1,5 @@
-# easyweb
-a light-weighted tool used to create asynchronous http servers
+# EasyWeb
+## a light-weighted tool used to create asynchronous http servers
 
 Example:
 ```
