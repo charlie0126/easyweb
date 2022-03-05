@@ -4,6 +4,7 @@ a light-weighted tool used to create asynchronous http servers
 Example:
 ```
 from easyweb.easyweb import WebApplication
+
 def index(request: Request):
   print("index called")
   print(request.protocol)
