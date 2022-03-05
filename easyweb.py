@@ -1,4 +1,4 @@
-# Stine Web Frame 1.0
+# EasyWeb Web Frame 1.0
 
 import asyncio
 from aiohttp import web
