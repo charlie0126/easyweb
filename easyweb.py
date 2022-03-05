@@ -52,7 +52,6 @@ Http404 = web.HTTPNotFound
 
 if __name__ == '__main__':
     def index(request: Request):
-        global index_started
         print("index called")
         raise Http403
 
