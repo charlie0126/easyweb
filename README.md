@@ -2,6 +2,7 @@
 a light-weighted tool used to create asynchronous http servers
 
 Example:
+`
 from easyweb.easyweb import WebApplication
 def index(request: Request):
   global index_started
@@ -16,3 +17,4 @@ def index(request: Request):
         ]
 
 run(Test, "127.0.0.1", 8000)
+`
