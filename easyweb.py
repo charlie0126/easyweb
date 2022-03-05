@@ -8,16 +8,10 @@ __all__ = ["path", "WebApplication", "run",
            "Request", "Response", "WebSocketResponse",
            "FileResponse", "StreamResponse",
            "Http404", "Http403"]
-LOG = True
 
 
 def path(method, url, view):
     return method, url, view
-
-
-def log(status: bool):
-    global LOG
-    LOG = status
 
 
 class WebApplication:
@@ -57,15 +51,9 @@ Http404 = web.HTTPNotFound
 
 
 if __name__ == '__main__':
-    log(True)
-    index_started = False
     def index(request: Request):
         global index_started
         print("index called")
-        index_started = True
-        index.protocol = request.protocol
-        index.method = request.method
-        index.subsite = request.url
         raise Http403
 
 
