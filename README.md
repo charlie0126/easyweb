@@ -3,7 +3,7 @@
 
 Example:
 ```
-from easyweb.easyweb import WebApplication
+from easyweb.easyweb import WebApplication, run, path, Http403
 
 def index(request: Request):
   print("index called")
